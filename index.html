@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メニュー名の由来 | bridge personal hair stylist</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@200;300;400&family=Zen+Old+Mincho:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:    #f9f6f2;
+  --bg2:   #f2ede6;
+  --bg3:   #ebe4da;
+  --ink:   #181410;
+  --ink2:  #3a2e2a;
+  --gold:  #b8953a;
+  --brown: #6b4f3a;
+  --white: #fdfaf6;
+  --rule:  rgba(184,149,58,.18);
+  --rule2: rgba(184,149,58,.08);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:'Noto Serif JP',serif;
+  font-weight:300;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+
+/* ── LANG TOGGLE ── */
+.ja-only{ display:block }
+.en-only{ display:none }
+span.ja-only{ display:inline }
+span.en-only{ display:none }
+body.en .ja-only{ display:none }
+body.en .en-only{ display:block }
+body.en span.ja-only{ display:none }
+body.en span.en-only{ display:inline }
+
+/* ── HEADER ── */
+.hd{
+  background:var(--ink);
+  padding:3rem 1.5rem 2.6rem;
+  text-align:center;
+  position:relative;
+}
+.hd-pre{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.6rem; font-weight:300; font-style:italic;
+  color:rgba(184,149,58,.6);
+  letter-spacing:.28em;
+  margin-bottom:.9rem;
+}
+.hd-logo{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.8rem,7vw,2.6rem);
+  font-weight:300; font-style:italic;
+  color:var(--white);
+  letter-spacing:.04em; line-height:1;
+  margin-bottom:.5rem;
+}
+.hd-rule{
+  width:32px; height:1px;
+  background:var(--gold);
+  margin:.85rem auto; opacity:.65;
+}
+.hd-title{
+  font-family:'Zen Old Mincho',serif;
+  font-size:clamp(.76rem,3vw,.9rem);
+  color:rgba(253,250,246,.55);
+  letter-spacing:.22em; font-weight:400;
+}
+.lang-btn{
+  position:absolute; top:1.2rem; right:1.4rem;
+  background:none;
+  border:1px solid rgba(184,149,58,.35);
+  color:rgba(184,149,58,.6);
+  font-family:'Cormorant Garamond',serif;
+  font-size:.58rem; font-weight:300;
+  letter-spacing:.18em;
+  padding:.28rem .72rem;
+  cursor:pointer;
+  transition:border-color .2s,color .2s;
+}
+.lang-btn:hover{ border-color:var(--gold); color:var(--gold); }
+
+/* ── INTRO ── */
+.intro{
+  max-width:540px; margin:0 auto;
+  padding:2.8rem 1.6rem 2.2rem;
+  text-align:center;
+}
+.intro-frame{
+  border:1px solid var(--rule);
+  padding:1.5rem 1.8rem;
+  margin-bottom:1.6rem;
+  background:var(--bg2);
+}
+.intro-text{
+  font-family:'Noto Serif JP',serif;
+  font-size:.78rem; font-weight:300;
+  color:var(--ink2); line-height:2.1; letter-spacing:.07em;
+}
+.intro-sig{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.7rem; font-weight:300; font-style:italic;
+  color:var(--gold); letter-spacing:.1em;
+}
+
+/* ── SECTION HEADER ── */
+.sec-head{
+  max-width:640px; margin:0 auto;
+  padding:2rem 1.5rem .4rem;
+}
+.sec-label{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.56rem; font-weight:300;
+  color:var(--gold); letter-spacing:.32em; text-transform:uppercase;
+  display:flex; align-items:center; gap:.8rem;
+}
+.sec-label::before,.sec-label::after{
+  content:''; flex:1; height:1px; background:var(--rule);
+}
+
+/* ── CARDS ── */
+.cards{
+  max-width:640px; margin:0 auto;
+  padding:.8rem 1.2rem 1.6rem;
+  display:flex; flex-direction:column; gap:1.4rem;
+}
+.card{
+  background:var(--white);
+  border:1px solid var(--rule);
+  padding:1.8rem 1.8rem 1.6rem;
+  position:relative; overflow:hidden;
+}
+.card::before{
+  content:''; position:absolute; top:0; left:0;
+  width:3px; height:100%;
+  background:linear-gradient(to bottom,var(--gold),transparent);
+}
+.card-num{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.5rem; font-weight:300;
+  color:rgba(184,149,58,.45); letter-spacing:.3em; margin-bottom:.4rem;
+}
+.card-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:clamp(1.3rem,5.5vw,1.75rem); font-weight:300;
+  color:var(--ink); letter-spacing:.06em; line-height:1.2; margin-bottom:.22rem;
+}
+.card-name em{ font-style:italic; color:var(--gold); }
+.card-reading{
+  font-family:'Noto Serif JP',serif;
+  font-size:.6rem; font-weight:200;
+  color:var(--brown); letter-spacing:.14em; margin-bottom:1rem;
+}
+.card-rule{
+  width:22px; height:1px; background:var(--gold);
+  margin-bottom:1.1rem; opacity:.55;
+}
+.origin-label{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.5rem; letter-spacing:.28em;
+  color:var(--gold); text-transform:uppercase; margin-bottom:.45rem;
+}
+.origin-word{
+  font-family:'Zen Old Mincho',serif;
+  font-size:clamp(.8rem,3vw,.94rem);
+  color:var(--ink); letter-spacing:.09em; line-height:1.9; margin-bottom:.9rem;
+}
+.origin-word strong{ color:var(--gold); font-weight:400; }
+.origin-body{
+  font-family:'Noto Serif JP',serif;
+  font-size:.75rem; font-weight:300;
+  color:var(--ink2); line-height:2.05; letter-spacing:.06em;
+}
+.origin-body+.origin-body{
+  margin-top:.85rem; padding-top:.85rem;
+  border-top:1px solid var(--rule2);
+}
+.origin-note{
+  font-family:'Noto Serif JP',serif;
+  font-size:.7rem; font-weight:200; font-style:italic;
+  color:var(--brown); letter-spacing:.05em; line-height:2;
+  margin-top:.9rem; padding:.8rem 1.1rem;
+  border-left:2px solid var(--gold); background:var(--bg2);
+}
+/* English italic summary — always visible */
+.origin-en{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.78rem; font-style:italic; font-weight:300;
+  color:var(--brown); letter-spacing:.04em; line-height:1.85;
+  margin-top:.9rem; padding-top:.9rem;
+  border-top:1px solid var(--rule2);
+  display:none;
+}
+body.en .origin-en{ display:block; }
+body.en .origin-body{ display:none; }
+body.en .origin-note{ display:none; }
+body.en .origin-word.ja-w{ display:none; }
+
+/* option cards smaller */
+.cards-opt .card{ padding:1.4rem 1.6rem 1.3rem; }
+.cards-opt .card-name{ font-size:clamp(1rem,4vw,1.22rem); }
+
+/* ── PHILOSOPHY BAND ── */
+.phil{
+  background:var(--bg3);
+  border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);
+  padding:2.4rem 1.5rem; margin:1.4rem 0; text-align:center;
+}
+.phil-inner{ max-width:480px; margin:0 auto; }
+.phil-pre{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.54rem; letter-spacing:.3em;
+  color:var(--gold); text-transform:uppercase; margin-bottom:1.1rem;
+}
+.phil-body{
+  font-family:'Zen Old Mincho',serif;
+  font-size:clamp(.8rem,3vw,.94rem);
+  color:var(--ink2); line-height:2.3; letter-spacing:.09em;
+}
+.phil-body strong{ color:var(--gold); font-weight:400; }
+
+/* ── STICKY BUTTONS ── */
+.sticky-btns{
+  position:fixed; bottom:1.6rem; right:1.4rem;
+  z-index:200; display:flex; flex-direction:column; align-items:center; gap:.7rem;
+}
+.sticky-btn{
+  display:flex; align-items:center; justify-content:center;
+  width:54px; height:54px; border-radius:50%;
+  text-decoration:none; transition:transform .2s,box-shadow .2s;
+}
+.sticky-btn:hover{ transform:scale(1.08); }
+.sticky-btn.line-btn{
+  background:#06C755;
+  box-shadow:0 4px 18px rgba(6,199,85,.32);
+}
+.sticky-btn.insta-btn{
+  background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
+  box-shadow:0 4px 18px rgba(220,39,67,.28);
+}
+.sticky-btn svg{ width:26px; height:26px; fill:#fff; }
+
+/* ── FOOTER CTA ── */
+.ft-cta{
+  background:var(--ink);
+  padding:2.8rem 1.5rem; text-align:center;
+}
+.ft-cta-text{
+  font-family:'Noto Serif JP',serif;
+  font-size:.74rem; font-weight:200;
+  color:rgba(253,250,246,.55); letter-spacing:.1em; line-height:2.1;
+  margin-bottom:1.6rem;
+}
+.ft-btn-wrap{
+  display:flex; flex-direction:column; gap:.9rem; align-items:center;
+}
+.ft-btn-line{
+  display:inline-flex; align-items:center; justify-content:center;
+  background:#06C755; color:#fff;
+  font-family:'Noto Serif JP',serif; font-size:.74rem; font-weight:300;
+  letter-spacing:.12em; padding:.85rem 2rem; text-decoration:none;
+  width:min(100%,280px); transition:opacity .2s;
+}
+.ft-btn-line:hover{ opacity:.85; }
+.ft-btn-menu{
+  display:inline-flex; align-items:center; justify-content:center;
+  border:1px solid rgba(253,250,246,.26); color:rgba(253,250,246,.6);
+  font-family:'Cormorant Garamond',serif; font-size:.72rem; font-weight:300;
+  letter-spacing:.2em; padding:.72rem 1.8rem; text-decoration:none;
+  width:min(100%,280px); transition:border-color .2s,color .2s;
+}
+.ft-btn-menu:hover{ border-color:var(--gold); color:var(--gold); }
+.ft-note{
+  font-family:'Cormorant Garamond',serif;
+  font-size:.56rem; font-weight:300;
+  color:rgba(253,250,246,.24); letter-spacing:.2em; margin-top:1.6rem;
+}
+</style>
+</head>
+<body>
+
+<!-- STICKY BUTTONS -->
+<div class="sticky-btns">
+  <a href="https://lin.ee/KR1qGTc" target="_blank" class="sticky-btn line-btn" aria-label="LINE">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63h2.386c.346 0 .627.285.627.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.63-.63.346 0 .628.285.628.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/></svg>
+  </a>
+  <a href="https://www.instagram.com/takahair_bridge/" target="_blank" class="sticky-btn insta-btn" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+  </a>
+</div>
+
+<!-- HEADER -->
+<header class="hd">
+  <button class="lang-btn" id="langBtn" onclick="toggleLang()">EN</button>
+  <p class="hd-pre">Discover your sanctuary</p>
+  <h1 class="hd-logo">bridge</h1>
+  <div class="hd-rule"></div>
+  <p class="hd-title ja-only">メニュー名の由来</p>
+  <p class="hd-title en-only">The Story Behind the Names</p>
+</header>
+
+<!-- INTRO -->
+<section class="intro">
+  <div class="intro-frame">
+    <p class="intro-text ja-only">
+      bridgeのメニュー名は、意味を込めてつけた名前です。<br>
+      髪がキレイに、ステキになれるように。<br>
+      「今までの自分とはちょっと違う自分に」<br>
+      そう感じていただけたら嬉しいです。
+    </p>
+    <p class="intro-text en-only">
+      Every name at bridge carries intention.<br>
+      To make your hair beautiful, to make you feel like yourself —<br>
+      only a little more so.<br>
+      That is the hope behind each word.
+    </p>
+  </div>
+  <p class="intro-sig">— Meaning List</p>
+</section>
+
+<!-- COURSE NAMES -->
+<div class="sec-head">
+  <div class="sec-label">Course Name</div>
+</div>
+
+<div class="cards">
+
+  <!-- 01 Re:bone -->
+  <div class="card">
+    <p class="card-num">01 / Course</p>
+    <h2 class="card-name"><em>Re:bone</em> cut course</h2>
+    <p class="card-reading ja-only">リボーン カット コース</p>
+    <div class="card-rule"></div>
+    <p class="origin-label">Origin</p>
+    <p class="origin-word ja-w ja-only">
+      <strong>Re：</strong>再び、やり直す<br>
+      <strong>bone：</strong>骨格
+    </p>
+    <p class="origin-word en-only">
+      <strong>Re:</strong> to begin again &nbsp;·&nbsp; <strong>bone:</strong> the skeletal structure
+    </p>
+    <p class="origin-body">
+      日本人の美容師は、世界でも稀な「骨格補正の技術」を
+      本来持ち合わせています。
+      頭蓋骨・頭の形・生え際・毛流れを読み解き、
+      カットで補正する。
+    </p>
+    <p class="origin-body">
+      KAMI CHARISMA 2021受賞、VOGUE ITALYをはじめとした
+      国内外の雑誌掲載、NYファッションウィーク参加——
+      TAKAが20年以上、東京・ニューヨーク・大阪の現場で
+      磨いてきた技術がここにあります。
+    </p>
+    <p class="origin-body">
+      「Re:」には「再生」と「やり直し」の意味も込めています。
+      過去のカットの積み重ねをリセットし、
+      あなたの骨格が持つ本来の美しさを
+      もう一度引き出す——そのためのカットがRe:boneです。
+    </p>
+    <p class="origin-note">
+      担当者を変えない理由は、知ってくれているから。<br>
+      骨格を知ること、髪質を知ること、その人を知ること。<br>
+      Re:boneは、その積み重ねで完成していきます。
+    </p>
+    <p class="origin-en">
+      Re: means to begin again. Bone is the skeletal structure beneath.<br><br>
+      Japanese stylists carry a rare gift — the ability to read the skull,
+      the hairline, the natural grain — and cut to correct.
+      KAMI CHARISMA Award 2021. VOGUE ITALY. NY Fashion Week.
+      Twenty years across Tokyo, New York, and Osaka — building the eye
+      that sees what others miss.<br><br>
+      Re:bone is not a haircut. It is a reset of everything that came before.<br><br>
+      <em>The reason clients never change stylists — is that their stylist knows them.</em>
+    </p>
+  </div>
+
+  <!-- 02 Minimum D -->
+  <div class="card">
+    <p class="card-num">02 / Course</p>
+    <h2 class="card-name">Minimum <em>"D"</em> course</h2>
+    <p class="card-reading ja-only">ミニマム ディー コース</p>
+    <div class="card-rule"></div>
+    <p class="origin-label">Origin</p>
+    <p class="origin-word ja-w ja-only">
+      <strong>Minimum：</strong>最小限の<br>
+      <strong>D：</strong>Damage（ダメージ）
+    </p>
+    <p class="origin-word en-only">
+      <strong>Minimum:</strong> as little as possible &nbsp;·&nbsp; <strong>D:</strong> Damage
+    </p>
+    <p class="origin-body">
+      カラーは楽しいけれど、ダメージは少ないほうがいい。
+      この当たり前の願いに、できる限り応えるための名前です。
+      薬剤に栄養成分・軽減成分を配合し、
+      必要のないダメージを最小限に抑えながら
+      理想の色を実現します。
+    </p>
+    <p class="origin-note">
+      半年は持つヘアを作りたい。<br>
+      カラーを楽しむことと、髪を大切にすることは、<br>
+      bridgeでは矛盾しません。
+    </p>
+    <p class="origin-en">
+      Color should be joyful — not a trade-off.
+      By formulating with nourishing and protective agents,
+      TAKA works to remove unnecessary damage from the equation entirely.<br><br>
+      <em>At bridge, loving your color and caring for your hair are not in conflict.</em>
+    </p>
+  </div>
+
+  <!-- 03 Alpha perm -->
+  <div class="card">
+    <p class="card-num">03 / Course</p>
+    <h2 class="card-name"><em>Alpha</em> perm course</h2>
+    <p class="card-reading ja-only">アルファ パーマ コース</p>
+    <div class="card-rule"></div>
+    <p class="origin-label">Origin</p>
+    <p class="origin-word ja-w ja-only">
+      <strong>Alpha：</strong>プラスアルファ（α）
+    </p>
+    <p class="origin-word en-only">
+      <strong>Alpha:</strong> the plus α — a little something extra
+    </p>
+    <p class="origin-body">
+      パーマをかけることで毎日の生活に「何かプラスになる」
+      ——その意味を込めてAlphaと名付けました。
+      パーマ特有のごわつきやパサつきを最小限に抑えながら、
+      弾むような、やわらかな質感を目指します。
+    </p>
+    <p class="origin-note">
+      スタイリングが楽になる。朝の時間が変わる。<br>
+      αひとつ加わるだけで、毎日が少し豊かになります。
+    </p>
+    <p class="origin-en">
+      Alpha means a little something extra — the plus α that changes everything.
+      A perm that minimizes the roughness and dryness it typically brings,
+      in pursuit of soft, bouncy texture that moves with you.<br><br>
+      <em>One small addition to your mornings. One quiet change in how your day begins.</em>
+    </p>
+  </div>
+
+</div>
+
+<!-- PHILOSOPHY BAND -->
+<div class="phil">
+  <div class="phil-inner">
+    <p class="phil-pre">bridge philosophy</p>
+    <p class="phil-body ja-only">
+      デザインを楽しんでいただけるスタイルづくり。<br>
+      <strong>半年は持つヘアを作りたい。</strong><br>
+      スタイリングも簡単に、ホームケアも長く。<br>
+      ダメージは、ないほうがいい。<br><br>
+      それが20年以上、現場で何万人と<br>
+      髪質を見続けた結果、見つけた方法です。
+    </p>
+    <p class="phil-body en-only">
+      Hair you can enjoy — for style and for life.<br>
+      <strong>A cut that lasts six months.</strong><br>
+      Easy to style. Easy to maintain. Minimal damage.<br><br>
+      This is what over twenty years and tens of thousands of clients<br>
+      taught TAKA to create.
+    </p>
+  </div>
+</div>
+
+<!-- TREATMENT & OPTION -->
+<div class="sec-head">
+  <div class="sec-label">Treatment &amp; Option</div>
+</div>
+
+<div class="cards cards-opt">
+
+  <!-- Fluve -->
+  <div class="card">
+    <p class="card-num">01 / Treatment</p>
+    <h2 class="card-name"><em>Fluve</em></h2>
+    <p class="card-reading ja-only">フルーヴ — パーソナルモイストトリートメント</p>
+    <p class="card-reading en-only">Personal Moist Treatment</p>
+    <div class="card-rule"></div>
+    <p class="origin-label">Origin</p>
+    <p class="origin-word ja-w ja-only">
+      <strong>Fluve：</strong>フランス語で「大河」
+    </p>
+    <p class="origin-word en-only">
+      <strong>Fluve:</strong> French for "great river"
+    </p>
+    <p class="origin-body">
+      みずみずしく、しっとり、艶やかに——
+      大河のようにゆたかな潤いが髪に宿ってほしいという
+      想いを込めてつけました。
+      髪質から考えたパーソナルな処方で、
+      必要なものだけを見極めて行います。
+    </p>
+    <p class="origin-en">
+      Moist, luminous, deeply nourishing —
+      like a great river flowing through.
+      A treatment formulated personally for your hair;
+      only what is needed, nothing more.
+    </p>
+  </div>
+
+  <!-- Init -->
+  <div class="card">
+    <p class="card-num">02 / Treatment</p>
+    <h2 class="card-name"><em>Init</em></h2>
+    <p class="card-reading ja-only">イニット — 高品質酸熱トリートメント</p>
+    <p class="card-reading en-only">Acid-Based Reset Treatment</p>
+    <div class="card-rule"></div>
+    <p class="origin-label">Origin</p>
+    <p class="origin-word ja-w ja-only">
+      <strong>Init：</strong>initialize（初期化）の略語
+    </p>
+    <p class="origin-word en-only">
+      <strong>Init:</strong> short for initialize — to reset to zero
+    </p>
+    <p class="origin-body">
+      毛髪をリセット（初期化）し、ゼロから整える——
+      その意味を込めた名前です。
+      毛髪リセットクレンジングと組み合わせた酸熱トリートメントで、
+      髪が栄養を受け入れる状態に整えてから
+      内部・外部をしっかりと補修します。
+    </p>
+    <p class="origin-note">
+      過去のダメージや施術の蓄積を「初期化」する——<br>
+      Initは髪の再出発のためのトリートメントです。
+    </p>
+    <p class="origin-en">
+      Combined with a deep cleansing treatment,
+      Init first brings your hair to a state ready to receive,
+      then rebuilds from the inside out.<br><br>
+      <em>A fresh start for hair that has carried too much for too long.</em>
+    </p>
+  </div>
+
+  <!-- Deep Detox Cleansing -->
+  <div class="card">
+    <p class="card-num">01 / Option</p>
+    <h2 class="card-name">Deep Detox Cleansing</h2>
+    <p class="card-reading ja-only">ディープデトックスクレンジング</p>
+    <div class="card-rule"></div>
+    <p class="origin-body">
+      毎日のシャンプーでは落としきれない、
+      髪の内部にまで入り込んだ油や
+      重なり合ったシリコンなどを除去し、素髪へ戻します。
+      髪の点滴として、ごわつきを軽減してくれます。
+    </p>
+    <p class="origin-en">
+      A treatment that removes what daily shampoo cannot reach —
+      the oils and silicones that have settled deep into the hair shaft over time.
+      Your hair, returned to its natural state.
+      Think of it as an IV drip for your hair.
+    </p>
+  </div>
+
+  <!-- Cuticle Lock Care -->
+  <div class="card">
+    <p class="card-num">02 / Option</p>
+    <h2 class="card-name">Cuticle Lock Care</h2>
+    <p class="card-reading ja-only">キューティクルロックケア</p>
+    <div class="card-rule"></div>
+    <p class="origin-body">
+      カラーやパーマ施術後の髪に残ってしまった
+      残留色素を除去し、pH（ペーハー）を中性に戻します。
+      キューティクルが引き締まり、
+      ダメージしにくい髪を作り、ツヤを戻します。
+    </p>
+    <p class="origin-en">
+      After color or perm, residual compounds remain inside the hair.
+      This treatment removes them, returns the pH to neutral,
+      and seals the cuticle closed —
+      creating hair that resists damage and regains its shine.
+    </p>
+  </div>
+
+  <!-- Scalp Relax Massage -->
+  <div class="card">
+    <p class="card-num">03 / Option</p>
+    <h2 class="card-name">Scalp Relax Massage</h2>
+    <p class="card-reading ja-only">スカルプリラックスマッサージ</p>
+    <div class="card-rule"></div>
+    <p class="origin-body">
+      少しだけ頭皮が気になる、
+      日々の疲れが溜まっている、目の奥をスッキリさせたい——
+      そんな方へ向けた短時間の施術です。
+      頭皮の汚れをしっかり取り、保湿します。
+    </p>
+    <p class="origin-en">
+      For when your scalp feels tight,
+      your eyes feel heavy,
+      your day has been too long.
+      A short, focused treatment: cleanse, hydrate, release.
+    </p>
+  </div>
+
+</div>
+
+<!-- FOOTER CTA -->
+<footer class="ft-cta">
+  <p class="ft-cta-text ja-only">
+    メニューについてのご質問は、<br>
+    LINEでお気軽にどうぞ。
+  </p>
+  <p class="ft-cta-text en-only">
+    Questions about any treatment or course?<br>
+    Feel free to reach out via LINE.
+  </p>
+  <div class="ft-btn-wrap">
+    <a href="https://lin.ee/KR1qGTc" target="_blank" class="ft-btn-line">
+      <span class="ja-only">LINEで相談する</span>
+      <span class="en-only">Contact via LINE</span>
+    </a>
+    <a href="https://www.personalhairstylist.info/menu" target="_blank" class="ft-btn-menu">
+      <span class="ja-only">Menu へ戻る</span>
+      <span class="en-only">Back to Menu</span>
+    </a>
+  </div>
+  <p class="ft-note">bridge personal hair stylist — Kitahama, Osaka</p>
+</footer>
+
+<script>
+function toggleLang(){
+  const isEn = document.body.classList.toggle('en');
+  document.getElementById('langBtn').textContent = isEn ? 'JA' : 'EN';
+}
+</script>
+</body>
+</html>
