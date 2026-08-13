@@ -283,6 +283,16 @@ body.en .origin-word.ja-w{ display:none; }
   font-size:.56rem; font-weight:300;
   color:rgba(253,250,246,.24); letter-spacing:.2em; margin-top:1.6rem;
 }
+
+/* ★2026-08-13 追加：英語圏の窓口はInstagram（LINEが使えないため）。
+   日本語表示は一切変えず、英語表示のときだけInstagramへ向ける。 */
+.bg-ig{ background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF) !important;
+        border-color:transparent !important; }
+a.ft-btn-line.ja-only{ display:inline-flex; }
+a.ft-btn-line.en-only{ display:none; }
+body.en a.ft-btn-line.ja-only{ display:none; }
+body.en a.ft-btn-line.en-only{ display:inline-flex; }
+.ft-btn-ig{ background:linear-gradient(45deg,#F58529,#DD2A7B 55%,#8134AF); }
 </style>
 </head>
 <body>
@@ -610,12 +620,14 @@ body.en .origin-word.ja-w{ display:none; }
   </p>
   <p class="ft-cta-text en-only">
     Questions about any treatment or course?<br>
-    Feel free to reach out via LINE.
+    Feel free to reach out on Instagram.
   </p>
   <div class="ft-btn-wrap">
-    <a href="https://lin.ee/KR1qGTc" target="_blank" class="ft-btn-line">
-      <span class="ja-only">LINEで相談する</span>
-      <span class="en-only">Contact via LINE</span>
+    <a href="https://lin.ee/KR1qGTc" target="_blank" class="ft-btn-line ja-only">
+      LINEで相談する
+    </a>
+    <a href="https://www.instagram.com/takahair_bridge/" target="_blank" rel="noopener" class="ft-btn-line ft-btn-ig en-only">
+      Message on Instagram
     </a>
     <a href="https://takahair-bridge.github.io/bridge-menu/" target="_blank" class="ft-btn-menu">
       <span class="ja-only">Menu へ戻る</span>
